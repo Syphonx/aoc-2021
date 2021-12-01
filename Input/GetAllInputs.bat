@@ -1,5 +1,5 @@
 @echo off
-set year = 2020
+set year = 2021
 setlocal EnableDelayedExpansion
 for /l %%i in (1,1,25) do (
     set "dayNumber=0%%i"
