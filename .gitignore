@@ -10,6 +10,9 @@
 *.userosscache
 *.sln.docstates
 
+# Token
+Tools/advent-of-code-data/token
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
