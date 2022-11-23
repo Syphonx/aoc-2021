@@ -116,3 +116,20 @@ static bool ReadAsSplitLongs(std::string filename, std::vector<std::vector<long>
 
 	return true;
 }
+
+static std::vector<int> SplitStringIntoInts(std::string input, char delimiter)
+{
+	std::stringstream stream(input);
+	std::string segment;
+	std::vector<int> seglist;
+
+	while (std::getline(stream, segment, delimiter))
+	{
+		if (!segment.empty())
+		{
+			seglist.push_back(std::stoi(segment));
+		}
+	}
+
+	return seglist;
+}
